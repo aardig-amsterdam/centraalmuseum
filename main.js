@@ -28,3 +28,16 @@ function createTextFrame(title = "Developed by aardig", footer = "www.aardig.ams
 }
 
 console.log("%c" + createTextFrame(), "font-family: monospace; white-space: pre;");
+
+
+(function() {
+
+    // On icon click...
+    $('.menu-link-wrapper').on('click.mobileNav', function(){
+  
+      // Toggle the open/closed state of the menu icon
+      $('.menu-link-wrapper .menu-link').toggleClass('menu-trigger-open');
+  
+    });
+    
+  })();
